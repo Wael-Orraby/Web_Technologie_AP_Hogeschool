@@ -1,0 +1,84 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+
+header{
+	height: 12vh;
+	background-color: #222;	
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 2.5rem;
+	
+}
+nav{
+	display: none;
+}
+h1{
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+	height: 5vh;
+	
+
+}
+
+@media(min-width:800px){
+	header{
+		height: 20vh;
+		display: grid;
+		gap: 1rem;
+	}
+	h1{
+		}
+		nav{
+			
+			display: inline-block;
+			border-top: 1px solid rgb(115, 110, 110);
+			padding-top: .8rem;
+			
+
+		}
+		ul{
+			text-align: center;
+			
+			
+		}
+		li{
+			display: inline;
+			margin-right: 1rem;
+		}
+		a{
+			color: rgb(115, 110, 110);
+			text-decoration: none;
+		}
+		.geselecteerd{
+			color: #fff;
+		}
+	}
+
+	@media(min-width:1200px){
+		header{
+			height: 12vh;
+			position: relative;
+			
+		}
+		h1{
+			text-align: left;
+		}
+		nav{
+			border:none;
+			
+			right: 10px;
+		}
+		ul{
+			position: absolute;
+			right: 0;
+			top: 3rem;
+		}
+	
+	}
+
+	

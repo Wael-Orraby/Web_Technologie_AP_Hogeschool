@@ -1,0 +1,32 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+
+ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 3rem;
+	height: 100vh;
+	padding: 3rem;
+	grid-template-areas: 
+		"f	e	d"
+		"c	b	a";}
+
+li {
+	padding: 3rem;
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+	font-family: helvetica;
+	font-weight: 900;
+	padding-top: 8rem;}
+
+li:nth-child(1) {grid-area: a; background-color: firebrick;}
+li:nth-child(2) {grid-area: b; background-color: yellowgreen;}
+li:nth-child(3) {grid-area: c; background-color: pink;}
+li:nth-child(4) {grid-area: d; background-color: deepskyblue;}
+li:nth-child(5) {grid-area: e; background-color: yellow;}
+li:nth-child(6) {grid-area: f; background-color: plum;}

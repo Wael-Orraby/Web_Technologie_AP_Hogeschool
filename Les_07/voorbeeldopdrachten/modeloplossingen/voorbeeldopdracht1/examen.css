@@ -1,0 +1,149 @@
+body {
+  padding: 2rem;
+  font-family: helvetica;
+  font-size: 1.65rem;
+  font-weight: 100;
+}
+
+h1 img {
+  width: 4.5rem;
+  position: relative;
+  top: .6rem;
+  padding-right: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li:before {
+  content: "//";
+  padding-right: 1rem;
+}
+
+nav ul li a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header, .cursus, .nieuws, .over {
+  padding-bottom: 2rem;
+  border-bottom: .1rem solid black;
+}
+
+main {
+  padding-top: 2rem;
+}
+
+.cursus, .nieuws, .over {
+  margin-bottom: 2rem;
+}
+
+main h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+article {
+  height: 25rem;
+  background-color: #ffeb3b;
+  padding: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+article p {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  line-height: 3.2rem;
+}
+
+div.nieuws article {
+  background-color: #2196f3;
+}
+
+article h3 {font-weight: 700;}
+
+div.over p {
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+div.over .figuur {
+  height: 35rem;
+  display: grid;
+  grid-template-rows: 1fr .3fr .6fr .3fr .6fr .3fr 1fr;
+  grid-template-columns: 1fr .3fr 1fr 1fr .3fr 1fr;
+}
+
+.een {grid-column: 1;grid-row: 3/6;background-color: #2196f3;}
+.twee {grid-column: 3/5;grid-row: 1;background-color: #2196f3;position:relative;}
+.drie {grid-column: 4/5;grid-row: 2;background-color: #2196f3;}
+.vier {grid-column: 2/5;grid-row: 3;background-color: #2196f3;}
+.vijf {grid-column: 6;grid-row: 3/6;background-color: #ffeb3b;}
+.zes {grid-column: 3/6;grid-row: 5;background-color: #ffeb3b;}
+.zeven {grid-column: 3;grid-row: 6;background-color: #ffeb3b;}
+.acht {grid-column: 3/5;grid-row: 7;background-color: #ffeb3b;position: relative;}
+
+.twee p, .acht p {background-color: white;width: 3rem;height: 3rem;position: absolute;left: 15%;top: 30%;}
+.acht p {left: auto; right: 15%;}
+
+main a {
+color: #3775aa;
+}
+
+.nieuws article a {
+  color: #ffeb3b;
+}
+
+
+@media (min-width: 950px) {
+
+  .cursus, .nieuws, .over {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .cursus > h2, .nieuws > h2 {
+    grid-column: 1/4;
+  }
+
+  .over {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .over h2 {grid-column: 1 / 3;}
+
+  div.over p {
+    grid-column: 1;
+  }
+
+  div.over .figuur {
+    grid-column: 2;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem 0;
+  }
+}

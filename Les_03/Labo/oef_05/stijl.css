@@ -1,0 +1,86 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+
+body{
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    background-color: rgb(174, 174, 215);
+    padding: 1rem 3rem;
+    text-align: center;
+
+}
+
+/*Header Styling*/
+ul{
+    
+    height: 100px;
+    padding: 2.8rem 1rem;
+    text-align: right;
+
+}
+li{
+    display: inline;
+    margin-left: 1rem;
+    
+   
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+/* Main styling*/
+main{
+    background-color: #699BF7;
+    height: 80vh;
+    padding: 5rem 10rem;
+}
+
+article{
+    display: inline-block;
+    width: 30vw;
+    
+}
+article h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+article h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+article p{
+    width: 27rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+article a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 1rem 1.8rem;
+    font-weight: normal;
+    border-radius: 0.7rem;
+}
+
+.afbeelding{
+    display: inline-block;
+   
+    
+}
+img{
+    width: 400px;
+    height: 400px;
+    margin-left: 13rem;
+}
+
+

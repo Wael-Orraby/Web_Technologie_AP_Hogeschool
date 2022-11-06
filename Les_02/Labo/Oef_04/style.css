@@ -1,0 +1,45 @@
+body{
+    background-color: lightblue;
+}
+*{
+    color: black;
+}
+main{
+    width: 300px;
+    margin-left: 40%;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    
+}
+main ul{
+    width: 290px;
+   
+    padding: 5px;
+    list-style: none;
+}
+li{
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.child1{
+    background-color: red;
+}
+.child2{
+    background-color: orange;
+}
+.child3{
+    background-color: yellow;
+}
+.child4{
+    background-color: green;
+}
+.child5{
+    background-color: blue;
+}
+.child6{
+    background-color: indigo;
+}
+.child7{
+    background-color: violet;
+}

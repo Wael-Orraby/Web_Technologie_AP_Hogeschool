@@ -1,0 +1,210 @@
+/* Gebruikte kleuren:
+#2da77c: groenblauw - gebruikt voor border boven header
+#289496: blauw - gebruikt voor border onder header
+#e7a618: oranje - gebruikt voor border boven footer
+#6fa453: groen (menu, links, grid)
+#1d82ae: blauw (menu, links, grid)
+#ce511b: rood (menu, links, grid)
+#da7e19: oranje (menu, links, grid)
+*/
+
+body {
+  font-size: 1.6rem;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.grid {
+  background-color: #6fa453;
+  height: 19rem;
+}
+
+.grid p {background-color: #1d82ae;}
+
+h1 img, main p, footer p, main p.datum, main h2, main h3, main img, article, .grid {
+  margin-bottom: 2rem;
+}
+
+main h3 {margin-bottom: 1rem;}
+
+h1 img {
+  width: 15vw;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+header, main, footer {
+  padding: 2rem;
+}
+
+footer {padding-bottom: 0;}
+
+header {
+  border-bottom: .6rem solid #289496;
+  border-top: .6rem solid #2da77c;
+}
+
+main {
+  border-bottom: .6rem solid #e7a618;
+}
+
+header nav ul li {
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 1.4rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header nav ul li:nth-child(1) a, header nav ul li:nth-child(5) a  {color: #1d82ae;}
+a.andere_a, header nav ul li:nth-child(2) a, header nav ul li:nth-child(7) a {color: #ce511b;}
+a.andere_b, header nav ul li:nth-child(3) a, header nav ul li:nth-child(6) a {color: #6fa453;}
+header nav ul li:nth-child(4) a {color: #da7e19;}
+
+main p, footer p {
+  line-height: 3rem;
+}
+
+main article p {
+  margin-bottom: 0;
+}
+
+main h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main h3 {
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+main p.datum {
+  color: #6fa453;
+}
+
+article a {color: #289496;}
+
+main img {
+  max-width: 100%;
+}
+
+article {
+  background-color: #f2f3ed;
+  padding: 2rem;
+}
+
+header h4 {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  header, main, footer {
+    padding-left: 14vw;
+    padding-right: 14vw;
+  }
+
+  h1 img {
+    width: 12vw;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 img {
+    width: 11vw;
+  }
+}
+
+
+@media (min-width: 1050px) {
+  header, main, footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  h1 img {
+    width: 10vw;
+  }
+
+  div.agenda, div.buurtnieuws {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  header h4 {
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    right: 2rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    text-align: right;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .twee p {grid-column: 2;}
+  .drie p {grid-column: 3;}
+
+  .grid.vier, .grid.vijf, .grid.zes {grid-template-columns: 1fr;grid-template-rows: 1fr 1fr 1fr;}
+  .grid.vier p {grid-row: 3;}
+  .grid.vijf p {grid-row: 2;}
+}
+
+@media (min-width: 1200px) {
+
+  header, main, footer {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  h1 img {
+    width: 8vw;
+  }
+
+  div.agenda, div.buurtnieuws {
+    gap: 3rem;
+  }
+
+  header, main, footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  footer {padding-bottom: 0;}
+
+  header h4 {
+    top: 4.5rem;
+    right: 4vw;
+  }
+
+  h1 img, main p, footer p, main p.datum, main h2, main img, article {
+    margin-bottom: 3rem;
+  }
+
+  header nav ul li {
+    margin-right: 2.4rem;
+  }
+
+  body {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    background-color: #ce511b;
+  }
+
+  .grid p {background-color: #da7e19;}
+
+}

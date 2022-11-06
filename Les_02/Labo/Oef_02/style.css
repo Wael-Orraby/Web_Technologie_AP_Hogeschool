@@ -1,0 +1,20 @@
+body{
+    margin: 0 auto;
+    background-color: tomato;
+     padding: 50px 35% 0 35%; 
+    
+}
+main{
+    background-color: #fff;
+    width: 300px;
+    border: 2px black solid;
+    padding: 20px;
+  
+    
+}
+h1{
+    font-weight: 400;
+}
+a{
+    color: tomato;
+}

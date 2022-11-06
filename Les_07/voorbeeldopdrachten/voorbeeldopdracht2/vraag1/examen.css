@@ -1,0 +1,14 @@
+/* Gebruikte kleuren:
+#2da77c: groenblauw - gebruikt voor border boven header
+#289496: blauw - gebruikt voor border onder header
+#e7a618: oranje - gebruikt voor border boven footer
+#6fa453: groen (menu, links, grid)
+#1d82ae: blauw (menu, links, grid)
+#ce511b: rood (menu, links, grid)
+#da7e19: oranje (menu, links, grid)
+*/
+
+body {
+  font-size: 1.6rem;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}

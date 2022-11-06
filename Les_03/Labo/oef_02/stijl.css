@@ -1,0 +1,36 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 35vh 2vw 0;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+span{
+    border-bottom: 5px solid orange;
+    border-radius: 50%;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin: 1.5rem;
+
+}
+
+a{
+    color: white;
+    background-color: black;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}

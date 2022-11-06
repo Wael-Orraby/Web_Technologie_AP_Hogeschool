@@ -1,0 +1,33 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+
+body{
+    font-family: sans-serif;
+    background-color: salmon;
+    padding: 2.5rem;
+}
+
+h1,h2{
+    border: 2px solid black;
+    padding: 1rem;
+    
+}
+h1{
+    font-size: 2rem;
+    background-color: yellow;
+    width: 200px;
+    border-bottom: none;
+    box-shadow: -5px 5px 0px black;
+}
+
+h2{
+    font-weight: bold;
+    width: 350px;
+    font-size: 3rem;
+    background-color: #fff;
+    box-shadow: -5px 5px 0px black,  5px 5px 0px black;;
+}

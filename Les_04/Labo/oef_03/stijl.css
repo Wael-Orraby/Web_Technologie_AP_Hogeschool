@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Lora:ital@1&family=Montserrat:wght@700&display=swap');
+
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+
+
+body{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+li{
+    font-size: 3rem;
+    text-align: center;
+    display: inline-block;
+    width: 33.33%;
+    height: 33.33vh;
+    padding-top: 6rem;
+    cursor: pointer;
+    transition: all 500ms;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 500ms 250ms;
+}
+ul li:hover{
+    background-color: #fff;
+}
+ul li:hover a{
+   color: #222;
+}
+li:nth-child(1){
+    background-color: #89b374;
+}
+li:nth-child(2){
+    background-color: #b5c266;
+}
+li:nth-child(3){
+    background-color: #e4e4e4;
+}
+li:nth-child(4){
+    background-color: #387490;
+}
+li:nth-child(5){
+    background-color: #01acb6;
+}
+li:nth-child(6){
+    background-color: #2b2b2d;
+}
+li:nth-child(7){
+    background-color: #702e52;
+}
+li:nth-child(8){
+    background-color: #f2503b;
+}
+li:nth-child(9){
+    background-color: #febe28;
+}
+
+

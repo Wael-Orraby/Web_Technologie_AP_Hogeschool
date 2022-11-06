@@ -1,0 +1,63 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+main{
+	height: 100vh;
+	display: grid;
+	gap: 2vh;
+	padding: 2vh;
+}
+main div{
+	position: relative;
+}
+h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 3rem;
+	position: absolute;
+	bottom: 2vh;
+	right: 2vh;
+	color: white;
+}
+
+div:nth-child(1) {background-color: #eb4f43;}
+div:nth-child(2) {background-color: #edd347;}
+div:nth-child(3) {background-color: #062f55;}
+div:nth-child(4) {background-color: #52a50f;}
+div:nth-child(5) {background-color: #f0aad7;}
+div:nth-child(6) {background-color: #a0f02f;}
+div:nth-child(7) {background-color: #ecc274;}
+div:nth-child(8) {background-color: #e9892f;}
+
+@media(min-width:800px){
+	main{
+		grid-template-columns: repeat(2,1fr);
+	}
+	h2{
+		top:0vh;
+		left: 2vh;
+		right: auto;
+		bottom: auto;
+	}
+	}
+
+	@media(min-width:1200px){
+		main{
+			grid-template-columns: repeat(4,1fr);
+		}
+		h2{
+			top:0vh;
+			right: 2vh;
+			left: auto;
+			bottom: auto;
+		}
+	
+div:nth-child(1),div:nth-child(7) {grid-column: 1/2;}
+div:nth-child(2),div:nth-child(8) {grid-column: 4/5;}
+	
+	}
+
+	

@@ -1,0 +1,33 @@
+body{
+    background-color: pink;
+   margin-top: 4rem;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-style: 1.3rem;
+}
+
+
+
+ul{
+    background-color: #fff;
+   width: 41rem;
+   height: 40rem;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 2rem;
+}
+li{
+    text-align: center;
+    background-color: deeppink;
+    display: inline-block;    
+    width: 19rem;
+    height: 19rem;
+    padding-top: 9rem;
+    box-sizing: border-box;
+}
+
+.margin_r{
+    margin-right: 2rem;
+}
+.margin_o{
+    margin-bottom: 2rem;          
+}

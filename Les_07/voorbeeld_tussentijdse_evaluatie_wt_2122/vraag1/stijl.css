@@ -1,0 +1,181 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+
+body {
+	font-family: 'Changa', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 200;
+}
+
+header {
+	padding: 2rem;
+	position: relative;
+}
+
+header h1 {
+	border: .1rem solid black;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 1.4rem;
+	margin-bottom: 8rem;
+}
+
+nav {
+	position: absolute;
+	top: 2.2rem;
+	right: 2rem;
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 2rem;
+	row-gap: .5rem;	
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+
+header h2 {
+	font-size: 4rem;
+	text-align: center;
+	margin-bottom: 8rem;
+	font-weight: 500;
+}
+
+header p {
+	line-height: 1.8rem;
+	margin-bottom: 2rem;	
+}
+
+header p + p {
+	margin-bottom: 0;
+}
+
+article {
+	height: 15rem;
+}
+
+footer {
+	padding: 2rem;
+}
+
+footer p {
+	text-align: center;
+}
+
+article p {display: none;}
+
+article:nth-child(1) {background-color: #ca9fd2;}
+article:nth-child(1) p {background-color: #fdc930;}
+article:nth-child(2) {background-color: #fa6148;}
+article:nth-child(2) p {background-color: #2155bf;color: white;}
+article:nth-child(3) {background-color: #fdc930;}
+article:nth-child(3) h3 {background-color: #21a16b;} 
+/* gebruikte kleur voor de schaduw van de cirkel: #9fd9c5 */
+
+
+
+
+@media (min-width: 700px) {
+	header div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 5vw;
+	}
+
+	header {
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 1300px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		height: 100vh;
+	}
+
+	article {height: auto;}
+
+	header {
+		max-width: none;
+		padding-bottom: 0;
+	}
+
+	main {
+		grid-row: 1 / 3;
+		grid-column: 2 / 3;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1.5fr 1fr;
+	}
+
+	footer p {
+
+	}
+
+	article {
+		padding: 2rem;
+	}
+
+	article:nth-child(1) {grid-column: 1 / 3;}
+	article:nth-child(3) {
+		background-image: url('img/xerox-code.jpeg');
+		background-size: cover;
+		position: relative;
+	}
+
+	article:nth-child(1) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 2fr 1fr;
+		gap: 2rem;
+	}
+
+	article:nth-child(1) p.een, article:nth-child(1) p.vijf {grid-column: 1 / 4;}
+
+	article:nth-child(2) {
+		display: grid;
+		gap: 2rem;
+	}
+
+	header p {
+		margin-bottom: 2rem;	
+	}
+
+	article p {display: block;}
+
+	article:nth-child(2) p {
+		text-align: center;
+		font-size: 5rem;
+		font-weight: 700;
+		padding-top: 1.1rem;
+	}
+	
+	article:nth-child(3) h3 {
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+		box-shadow: -5rem 0rem #9fd9c5;
+	} 
+
+	
+
+
+}

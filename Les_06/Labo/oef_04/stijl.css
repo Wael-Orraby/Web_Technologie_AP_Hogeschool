@@ -1,0 +1,50 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+body{display: grid;gap: 2rem;padding: 1rem;}
+ul {
+	border: 1rem solid #eee;
+	height: 90vw;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(4,1fr);
+
+}
+ul.figuur1 .een, ul.figuur2 .een, ul.figuur3 .vijf {background-color: #f7679b;}
+ul.figuur1 .twee, ul.figuur2 .twee, ul.figuur3 .zes {background-color: #db3d74;}
+ul.figuur1 .drie, ul.figuur2 .drie, ul.figuur3 .zeven {background-color: #ff96ad;}
+ul.figuur1 .vier, ul.figuur2 .vier, ul.figuur3 .acht {background-color: #ffc7e4;}
+
+ul.figuur3 .een, ul.figuur4 .een, ul.figuur1 .vijf {background-color: #45a9ff;}
+ul.figuur3 .twee, ul.figuur4 .twee, ul.figuur1 .zes {background-color: #0d65e0;}
+ul.figuur3 .drie, ul.figuur4 .drie, ul.figuur1 .zeven {background-color: #5fbaff;}
+ul.figuur3 .vier, ul.figuur4 .vier, ul.figuur1 .acht {background-color: #72e4ff;}
+
+/*START FIGUUR 1 AND FIGUUR 3*/
+ul.figuur1 .een,ul.figuur3 .een {grid-column: 1/3;grid-row: 1/3;}
+ul.figuur1 .twee,ul.figuur3 .twee {grid-column: 3/5;grid-row: 1/3;}
+ul.figuur1 .drie,ul.figuur3 .drie {grid-column: 1/3;grid-row: 3/5;}
+ul.figuur1 .vier,ul.figuur3 .vier {grid-column: 3/5;grid-row: 3/5;}
+ul.figuur1 .vijf,ul.figuur3 .vijf {grid-column: 2/3;grid-row: 2/3;}
+ul.figuur1 .zes,ul.figuur3 .zes {grid-column: 3/4;grid-row: 2/3;}
+ul.figuur1 .zeven,ul.figuur3 .zeven {grid-column: 2/3;grid-row: 3/4;}
+ul.figuur1 .acht,ul.figuur3 .acht {grid-column: 3/4;grid-row: 3/4;}
+
+/*START FIGUUR 2 AND FIGUUR 4*/
+ul.figuur2 .een,ul.figuur4 .een {grid-column: 1/3;grid-row: 1/3;}
+ul.figuur2 .twee,ul.figuur4 .twee {grid-column: 3/5;grid-row: 1/3;}
+ul.figuur2 .drie,ul.figuur4 .drie {grid-column: 1/3;grid-row: 3/5;}
+ul.figuur2 .vier,ul.figuur4 .vier {grid-column: 3/5;grid-row: 3/5;}
+ul.figuur2 .vijf,ul.figuur4 .vijf {grid-column: 2/3;grid-row: 2/3;}
+ul.figuur2 .zes,ul.figuur4 .zes {grid-column: 3/4;grid-row: 2/3;}
+ul.figuur2 .zeven,ul.figuur4 .zeven {grid-column: 2/3;grid-row: 3/4;}
+ul.figuur2 .acht,ul.figuur4 .acht {grid-column: 3/4;grid-row: 3/4;}
+
+
+@media(min-width:1200px){
+	body{grid-template-columns: repeat(2,1fr);}
+	ul{height: 50vw;}
+	}	
